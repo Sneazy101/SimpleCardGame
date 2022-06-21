@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var card string = "Ace of Spades"
+
+	card := deck{"Ace of Spades", "King of Clubs"}
 	fmt.Println(card)
+
 }
