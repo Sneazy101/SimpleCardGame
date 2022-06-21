@@ -3,6 +3,8 @@ package main
 func main() {
 
 	cards := newDeck()
-	cards.print()
-
+	err := cards.saveToFile("my_cards")
+	if err != nil {
+		return
+	}
 }
