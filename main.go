@@ -1,10 +1,7 @@
 package main
 
 func main() {
-
-	cards := newDeck()
-	err := cards.saveToFile("my_cards")
-	if err != nil {
-		return
-	}
+	cards := newDeckFromFile("my_cards")
+	cards.shuffle()
+	cards.print()
 }
